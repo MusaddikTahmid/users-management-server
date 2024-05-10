@@ -1,6 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
+
+// middleware
+app.use(cors());
 
 const users = [
   {
@@ -9,12 +13,12 @@ const users = [
     email: "sabana@gmail.com",
   },
   {
-    id: 1,
+    id: 2,
     name: "Shabnoor",
     email: "shabnoor@gmail.com",
   },
   {
-    id: 1,
+    id: 3,
     name: "Sabila",
     email: "sabila@gmail.com",
   },
